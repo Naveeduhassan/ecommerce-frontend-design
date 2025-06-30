@@ -1,1 +1,416 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.50">
+  <title>Product Detail</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <header>
+  <!-- Desktop & Tablet Header -->
+  <div class="main-header">
+    <div class="header-inner">
+      <button class="menu-btn" id="openSidebar"><i class="fas fa-bars"></i></button>
+      <a href="index.html">
+      <span class="brand-logo">
+        <span class="brand-icon"><i class="fas fa-shopping-bag"></i></span>
+        <span class="brand-name">Brand</span>
+      <a href="index.html">
+      </span>
+      <form class="search-bar">
+        <input type="search" placeholder="Search">
+        <select>
+          <option>All category</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+      <div class="header-actions">
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" class="user"><i class="fas fa-user"></i></a>
+      </div>
+      <div class="header-right">
+        <a href="#"><i class="fas fa-user"></i><span>Profile</span></a>
+        <a href="#"><i class="fas fa-envelope"></i><span>Message</span></a>
+        <a href="my-crt.html"><i class="fas fa-heart"></i><span>Orders</span></a>
+        <a href="product-listing.html"><i class="fas fa-shopping-cart"></i><span>My cart</span></a>
+      </div>
+    </div>
+
+    <div class="header-nav">
+      <ul>
+        <li><a href="#"><i class="fas fa-bars"></i> All category</a></li>
+        <li><a href="#">Hot offers</a></li>
+        <li><a href="#">Gift boxes</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Menu item</a></li>
+        <li><a href="#">Help <i class="fas fa-chevron-down"></i></a></li>
+      </ul>
+      <div class="selectors">
+        <div class="selector">
+          English, USD <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="selector">
+          Ship to <img src="https://flagcdn.com/16x12/de.png" alt="DE" class="flag-icon">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-user">
+        <div class="user-avatar"><i class="fas fa-user-circle"></i></div>
+        <div class="user-auth"><a href="#">Sign in</a> | <a href="#">Register</a></div>
+      </div>
+      <button class="close-sidebar" id="closeSidebar"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-list"></i> Categories</a></li>
+      <li><a href="#"><i class="fas fa-heart"></i> Favorites</a></li>
+      <li><a href="#"><i class="fas fa-box"></i> My orders</a></li>
+      <hr>
+      <li><a href="#"><i class="fas fa-globe"></i> English | USD</a></li>
+      <li><a href="#"><i class="fas fa-headphones"></i> Contact us</a></li>
+      <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+      <hr>
+      <li><a href="#">User agreement</a></li>
+      <li><a href="#">Partnership</a></li>
+      <li><a href="#">Privacy policy</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+</header>
+
+  <div class="product-breadcrumb">
+    Home &gt; Clothings &gt; Men's wear &gt; Summer clothing
+  </div>
+  <div class="product-detail-container">
+    <!-- Gallery -->
+    <div class="product-gallery">
+      <div class="product-gallery-main" id="mainImageBox">
+        <img id="mainImage" src="assets/cloth/1.jpg" alt="Product" />
+      </div>
+      <div class="product-gallery-thumbs" id="thumbs">
+        <img src="assets/cloth/1.jpg" class="selected" alt="thumb1">
+        <img src="assets/cloth/2.jpg" alt="thumb2">
+        <img src="assets/cloth/3.jpg" alt="thumb3">
+        <img src="assets/cloth/7.jpg" alt="thumb4">
+      </div>
+    </div>
+    <!-- Info -->
+    <div class="product-info">
+      <div class="product-status"><i class="fas fa-check-circle"></i> In stock</div>
+      <div class="product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</div>
+      <div>
+        <span class="product-rating">
+          <i class="fas fa-star"></i> 9.3
+        </span>
+        <span style="color:#888;">| 32 reviews | 154 sold</span>
+      </div>
+      <div class="product-prices">
+        <div class="price-block">
+          <span class="price">$98.00</span>
+          <span class="qty">50-100 pcs</span>
+        </div>
+        <div class="price-block">
+          <span class="price">$90.00</span>
+          <span class="qty">100-700 pcs</span>
+        </div>
+        <div class="price-block">
+          <span class="price">$78.00</span>
+          <span class="qty">700+ pcs</span>
+        </div>
+      </div>
+      <div class="product-attributes">
+        <div><b>Type:</b> Classic shoes</div>
+        <div><b>Material:</b> Plastic material</div>
+        <div><b>Design:</b> Modern nice</div>
+        <div><b>Customization:</b> Customized logo and design custom packages</div>
+        <div><b>Protection:</b> Refund Policy</div>
+        <div><b>Warranty:</b> 2 years full warranty</div>
+      </div>
+      <div class="product-action-row">
+        <button class="send-inquiry-btn">Send inquiry</button>
+      </div>
+      <div class="product-desc-short">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    </div>
+    <!-- Supplier -->
+    <div class="product-supplier">
+      <div class="supplier-title">Supplier</div>
+      <div class="supplier-name">GuangJi Trading LLC</div>
+      <div class="supplier-country">
+        <img src="assets/flags/germany.png" alt="Germany">
+        Germany
+      </div>
+      <div class="supplier-badges">
+        <span class="badge"><i class="fas fa-user-check"></i> Verified Seller</span>
+        <span class="badge"><i class="fas fa-globe"></i> Worldwide shipping</span>
+      </div>
+      <div class="supplier-btns">
+        <button class="send-inquiry-btn">Send inquiry</button>
+        <button class="profile-btn">Seller's profile</button>
+      </div>
+      <button class="wishlist-btn" id="wishlistBtn"><i class="far fa-heart"></i> Save for later</button>
+    </div>
+  </div>
+  <!-- Tabs -->
+   <div class="tab">
+  <div class="product-tabs">
+
+    <div class="tabs-header">
+      <button class="tab-btn active" data-tab="desc">Description</button>
+      <button class="tab-btn" data-tab="reviews">Reviews</button>
+      <button class="tab-btn" data-tab="shipping">Shipping</button>
+      <button class="tab-btn" data-tab="seller">About seller</button>
+    </div>
+    <div class="tab-content" id="tab-desc">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <table style="margin:16px 0;">
+        <tr><td><b>Model</b></td><td>#8786867</td></tr>
+        <tr><td><b>Style</b></td><td>Classic style</td></tr>
+        <tr><td><b>Certificate</b></td><td>ISO-898321212</td></tr>
+        <tr><td><b>Size</b></td><td>34mm x 450mm x 19mm</td></tr>
+        <tr><td><b>Memory</b></td><td>36GB RAM</td></tr>
+      </table>
+      <ul>
+        <li>Some great feature name here</li>
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>Duis aute irure dolor in reprehenderit</li>
+        <li>Some great feature name here</li>
+      </ul>
+    </div>
+    <div class="tab-content" id="tab-reviews" style="display:none;">
+      <p>No reviews yet.</p>
+    </div>
+    <div class="tab-content" id="tab-shipping" style="display:none;">
+      <p>Ships worldwide. Delivery in 7-14 business days.</p>
+    </div>
+    <div class="tab-content" id="tab-seller" style="display:none;">
+      <p>GuangJi Trading LLC is a verified seller based in Germany.</p>
+    </div>
+  </div>
+  <!-- Mobile Similar Products (optional, for mobile view) -->
+  <div class="product-similar-mobile" style="display:none;">
+    <!-- You can implement a horizontal scroll of similar products here for mobile -->
+  </div>
+  <!-- You may like section (place where you want in your product-detail.html) -->
+<div class="product-recommend">
+  <div class="recommend-title">You may like</div>
+  <ul class="recommend-list">
+    <li>
+      <img src="assets/cloth/1.jpg" alt="Men Blazers Sets Elegant Formal">
+      <div>
+        <div class="recommend-name">Men Blazers Sets Elegant Formal</div>
+        <div class="recommend-price">$7.00 – $39.50</div>
+      </div>
+    </li>
+    <li>
+      <img src="assets/cloth/2.jpg" alt="Men Shirt Sleeve Polo Contrast">
+      <div>
+        <div class="recommend-name">Men Shirt Sleeve Polo Contrast</div>
+        <div class="recommend-price">$7.00 – $99.50</div>
+      </div>
+    </li>
+    <li>
+      <img src="assets/tech/1.jpg" alt="Apple Watch Series Space Gray">
+      <div>
+        <div class="recommend-name">Apple Watch Series Space Gray</div>
+        <div class="recommend-price">$7.00 – $99.50</div>
+      </div>
+    </li>
+    <li>
+      <img src="assets/cloth/3.jpg" alt="Basketball Crew Socks Long Stuff">
+      <div>
+        <div class="recommend-name">Basketball Crew Socks Long Stuff</div>
+        <div class="recommend-price">$7.00 – $99.50</div>
+      </div>
+    </li>
+    <li>
+      <img src="assets/cloth/5.jpg" alt="New Summer Men's castrol T-Shirts">
+      <div>
+        <div class="recommend-name">New Summer Men's castrol T-Shirts</div>
+        <div class="recommend-price">$7.00 – $99.50</div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+<!-- Related products section (place where you want in your product-detail.html) -->
+<div class="related-products-section">
+  <div class="related-products-title">Related products</div>
+  <div class="related-products-list">
+    <div class="related-product-card">
+      <img src="assets/tech/1.jpg" alt="Xiaomi Redmi 8 Original">
+      <div class="related-product-name">Xiaomi Redmi 8<br>Original</div>
+      <div class="related-product-price">$32.00–$40.00</div>
+    </div>
+    <div class="related-product-card">
+      <img src="assets/tech/2.jpg" alt="Xiaomi Redmi 8 Original">
+      <div class="related-product-name">Xiaomi Redmi 8<br>Original</div>
+      <div class="related-product-price">$32.00–$40.00</div>
+    </div>
+    <div class="related-product-card">
+      <img src="assets/tech/3.jpg" alt="Xiaomi Redmi 8 Original">
+      <div class="related-product-name">Xiaomi Redmi 8<br>Original</div>
+      <div class="related-product-price">$32.00–$40.00</div>
+    </div>
+    <div class="related-product-card">
+      <img src="assets/tech/10.jpg" alt="Xiaomi Redmi 8 Original">
+      <div class="related-product-name">Xiaomi Redmi 8<br>Original</div>
+      <div class="related-product-price">$32.00–$40.00</div>
+    </div>
+    <div class="related-product-card">
+      <img src="assets/tech/4.jpg" alt="Xiaomi Redmi 8 Original">
+      <div class="related-product-name">Xiaomi Redmi 8<br>Original</div>
+      <div class="related-product-price">$32.00–$40.00</div>
+    </div>
+    <div class="related-product-card">
+      <img src="assets/tech/5.jpg" alt="Xiaomi Redmi 8 Original">
+      <div class="related-product-name">Xiaomi Redmi 8<br>Original</div>
+      <div class="related-product-price">$32.00–$40.00</div>
+    </div>
+  </div>
+</div>
+
+<!-- Discount banner section -->
+<div class="discount-banner">
+  <div class="discount-banner-content">
+    <div>
+      <div class="discount-banner-title">Super discount on more than 100 USD</div>
+      <div class="discount-banner-desc">Have you ever finally just write dummy info</div>
+    </div>
+    <button class="discount-banner-btn">Shop now</button>
+  </div>
+</div>
+      <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <div class="group">
+                <img src="image copy.png" alt="logo">
+            <p>Best information about the company <br> gies here but now lorem ipsum is</p>
+                <ul class="ul">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-linkedin"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                </ul>
+        </div>
+         <div class="group">
+            <h4>About Us</h4>
+            <ul>
+                <li class="i"><a href="#">About Us</a></li>
+                <li class="i"><a href="#">Find Stores</a></li>
+                <li class="i"><a href="#">Categories</a></li>
+                <li class="i"><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="group">
+            <h4>Partnerships</h4>
+            <ul>
+                <li class="i"><a href="#">Help Center</a></li>
+                <li class="i"><a href="#">Money Refund</a></li>
+                <li class="i"><a href="#">Shipping</a></li>
+                <li class="i"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+          <div class="group">
+            <h3>Informations</h4>
+            <ul>
+                <li class="i"><a href="#">About Us</a></li>
+                <li class="i"><a href="#">Find Stores</a></li>
+                <li class="i"><a href="#">Categories</a></li>
+                <li class="i"><a href="#">Blogs</a></li>
+            </ul>
+        </div> 
+         <div class="group">
+            <h3>For Users</h4>
+            <ul>
+                <li class="i"><a href="#">Login</a></li>
+                <li class="i"><a href="#">Register</a></li>
+                <li class="i"><a href="#">Settings</a></li>
+                <li class="i"><a href="#">My Orders</a></li>
+            </ul>
+        </div>
+        <div class="group">
+            <h4>Get app</h4>
+                <div class="buttons">
+                    <a href="#" class="button">
+    <span class="icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z" fill="white"></path>
+    </svg></span>
+    <div class="button-text google">
+    <span>Get it on</span>
+    <span>Google Play</span>
+</div>
+</a>
+</div>
+<div class="buttons"></div>
+<a href="#" class="button">
+    <span class="icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.5058 27.625C25.33 29.3817 24.0833 31.0958 22.185 31.1242C20.2866 31.1667 19.6775 30.005 17.5241 30.005C15.3566 30.005 14.6908 31.0958 12.8916 31.1667C11.0358 31.2375 9.6333 29.2967 8.4433 27.5825C6.0208 24.0833 4.16497 17.6375 6.6583 13.3025C7.8908 11.1492 10.1008 9.78916 12.495 9.74666C14.3083 9.71833 16.0366 10.9792 17.1558 10.9792C18.2608 10.9792 20.3575 9.46333 22.5533 9.68999C23.4741 9.73249 26.0525 10.0583 27.71 12.495C27.5825 12.58 24.6358 14.3083 24.6641 17.8925C24.7066 22.1708 28.4183 23.6017 28.4608 23.6158C28.4183 23.715 27.8658 25.6558 26.5058 27.625ZM18.4166 4.95833C19.4508 3.78249 21.165 2.88999 22.5816 2.83333C22.7658 4.49083 22.1 6.16249 21.1083 7.35249C20.1308 8.55666 18.5158 9.49166 16.9291 9.36416C16.7166 7.73499 17.51 6.03499 18.4166 4.95833Z" fill=""></path>
+    </svg></span>
+    <div class="button-text apple">
+        <span>Download from</span>
+        <span>App Store</span>
+    </div>
+</a>
+</div>
+</div>
+</div>
+</div>
+       <div class="lower-bar">
+            <div class="lower-bar-content">
+                <p>© Copyright 2023 Ecommerce.</p>
+            </div>
+            <div class="lower-bar-content">
+                <select>
+                    <option>
+                        English
+                    </option>
+                </select>
+            </div>
+       </div>
+    </footer>
+  <!-- FontAwesome for icons -->
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script> -->
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const mainImage = document.getElementById('mainImage');
+  const thumbs = document.querySelectorAll('#thumbs img');
+  thumbs.forEach(thumb => {
+    thumb.addEventListener('click', function() {
+      // Remove 'selected' from all
+      thumbs.forEach(t => t.classList.remove('selected'));
+      // Add 'selected' to clicked
+      this.classList.add('selected');
+      // Update main image
+      mainImage.src = this.src;
+      mainImage.alt = this.alt;
+    });
+  });
+});
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Remove active from all buttons
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content').forEach(tc => tc.style.display = 'none');
+    // Activate this tab
+    this.classList.add('active');
+    document.getElementById('tab-' + this.dataset.tab).style.display = 'block';
+  });
+});
+</script>
+</html>
