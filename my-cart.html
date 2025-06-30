@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+          <header>
+  <!-- Desktop & Tablet Header -->
+  <div class="main-header">
+    <div class="header-inner">
+      <button class="menu-btn" id="openSidebar"><i class="fas fa-bars"></i></button>
+      <a href="index.html">
+      <span class="brand-logo">
+        <span class="brand-icon"><i class="fas fa-shopping-bag"></i></span>
+        <span class="brand-name">Brand</span>
+      </span></a>
+      <form class="search-bar" style="visibility: none; border: none; background-color: #fff;">
+        <!-- <input type="search" placeholder="Search">
+        <select>
+          <option>All category</option>
+        </select>
+        <button type="submit">Search</button> -->
+      </form>
+      <div class="header-actions">
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" class="user"><i class="fas fa-user"></i></a>
+      </div>
+      <div class="header-right">
+        <a href="#"><i class="fas fa-user"></i><span>Profile</span></a>
+        <a href="#"><i class="fas fa-envelope"></i><span>Message</span></a>
+        <a href="my-cart.html"><i class="fas fa-heart"></i><span>Orders</span></a>
+        <a href="product-listing.html"><i class="fas fa-shopping-cart"></i><span>My cart</span></a>
+      </div>
+    </div>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-user">
+        <div class="user-avatar"><i class="fas fa-user-circle"></i></div>
+        <div class="user-auth"><a href="#">Sign in</a> | <a href="#">Register</a></div>
+      </div>
+      <button class="close-sidebar" id="closeSidebar"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-list"></i> Categories</a></li>
+      <li><a href="#"><i class="fas fa-heart"></i> Favorites</a></li>
+      <li><a href="#"><i class="fas fa-box"></i> My orders</a></li>
+      <hr>
+      <li><a href="#"><i class="fas fa-globe"></i> English | USD</a></li>
+      <li><a href="#"><i class="fas fa-headphones"></i> Contact us</a></li>
+      <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+      <hr>
+      <li><a href="#">User agreement</a></li>
+      <li><a href="#">Partnership</a></li>
+      <li><a href="#">Privacy policy</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+</header>
+
+
+<!-- My Cart Section (place after header in my-cart.html) -->
+<div class="cart-page">
+  <div class="cart-main">
+    <div class="cart-title">My cart (3)</div>
+    <div class="cart-list">
+      <!-- Cart Item 1 -->
+      <div class="cart-item">
+        <img src="assets/cloth/1.jpg" alt="T-shirt" class="cart-item-img">
+        <div class="cart-item-info">
+          <div class="cart-item-name">T-shirts with multiple colors, for men and lady</div>
+          <div class="cart-item-meta">Size: medium, Color: blue, Material: Plastic</div>
+          <div class="cart-item-seller">Seller: Artel Market</div>
+          <div class="cart-item-actions">
+            <button class="cart-remove-btn">Remove</button>
+            <button class="cart-save-btn">Save for later</button>
+          </div>
+        </div>
+        <div class="cart-item-side">
+          <div class="cart-item-price">$78.99</div>
+          <select class="cart-qty">
+            <option>Qty: 9</option>
+            <option>Qty: 8</option>
+            <option>Qty: 7</option>
+            <option>Qty: 6</option>
+            <option>Qty: 5</option>
+            <option>Qty: 4</option>
+            <option>Qty: 3</option>
+            <option>Qty: 2</option>
+            <option>Qty: 1</option>
+          </select>
+        </div>
+      </div>
+      <!-- Cart Item 2 -->
+      <div class="cart-item">
+        <img src="assets/cloth/3.jpg" alt="T-shirt" class="cart-item-img">
+        <div class="cart-item-info">
+          <div class="cart-item-name">T-shirts with multiple colors, for men and lady</div>
+          <div class="cart-item-meta">Size: medium, Color: blue, Material: Plastic</div>
+          <div class="cart-item-seller">Seller: Best factory LLC</div>
+          <div class="cart-item-actions">
+            <button class="cart-remove-btn">Remove</button>
+            <button class="cart-save-btn">Save for later</button>
+          </div>
+        </div>
+        <div class="cart-item-side">
+          <div class="cart-item-price">$39.00</div>
+          <select class="cart-qty">
+            <option>Qty: 3</option>
+            <option>Qty: 2</option>
+            <option>Qty: 1</option>
+          </select>
+        </div>
+      </div>
+      <!-- Cart Item 3 -->
+      <div class="cart-item">
+        <img src="assets/cloth/2.jpg" alt="T-shirt" class="cart-item-img">
+        <div class="cart-item-info">
+          <div class="cart-item-name">T-shirts with multiple colors, for men and lady</div>
+          <div class="cart-item-meta">Size: medium, Color: blue, Material: Plastic</div>
+          <div class="cart-item-seller">Seller: Artel Market</div>
+          <div class="cart-item-actions">
+            <button class="cart-remove-btn">Remove</button>
+            <button class="cart-save-btn">Save for later</button>
+          </div>
+        </div>
+        <div class="cart-item-side">
+          <div class="cart-item-price">$170.50</div>
+          <select class="cart-qty">
+            <option>Qty: 1</option>
+            <option>Qty: 2</option>
+            <option>Qty: 3</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="cart-bottom-actions">
+      <button class="cart-back-btn">&larr; Back to shop</button>
+      <button class="cart-removeall-btn">Remove all</button>
+    </div>
+  </div>
+  <div class="cart-summary">
+    <div class="cart-coupon">
+      <div class="cart-coupon-title">Have a coupon?</div>
+      <div class="cart-coupon-row">
+        <input type="text" placeholder="Add coupon">
+        <button>Apply</button>
+      </div>
+    </div>
+    <div class="cart-summary-list">
+      <div class="cart-summary-row">
+        <span>Subtotal:</span>
+        <span class="cart-summary-value" style="color:#fa3434;">$1403.97</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Discount:</span>
+        <span class="cart-summary-value" style="color:#10b981;">- $60.00</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Tax:</span>
+        <span class="cart-summary-value" style="color:#10b981;">+ $14.00</span>
+      </div>
+      <div class="cart-summary-row cart-summary-total">
+        <span>Total:</span>
+        <span class="cart-summary-total-value">$1357.97</span>
+      </div>
+    </div>
+    <button class="cart-checkout-btn">Checkout</button>
+    <div class="cart-payment-icons">
+      <img src="assets/payments/visa.png" alt="Visa">
+      <img src="assets/payments/mastercard.png" alt="Mastercard">
+      <img src="assets/payments/paypal.png" alt="PayPal">
+      <img src="assets/payments/applepay.png" alt="Apple Pay">
+    </div>
+  </div>
+</div>
+
+<!-- Saved for later section (place after your cart section in my-cart.html) -->
+<div class="cart-benefits">
+  <div class="cart-benefit">
+    <i class="fas fa-shield-alt"></i>
+    <div>
+      <div class="benefit-title">Secure payment</div>
+      <div class="benefit-desc">Have you ever finally just</div>
+    </div>
+  </div>
+  <div class="cart-benefit">
+    <i class="fas fa-headset"></i>
+    <div>
+      <div class="benefit-title">Customer support</div>
+      <div class="benefit-desc">Have you ever finally just</div>
+    </div>
+  </div>
+  <div class="cart-benefit">
+    <i class="fas fa-truck"></i>
+    <div>
+      <div class="benefit-title">Free delivery</div>
+      <div class="benefit-desc">Have you ever finally just</div>
+    </div>
+  </div>
+</div>
+
+<div class="saved-later-section">
+  <div class="saved-later-title">Saved for later</div>
+  <div class="saved-later-list">
+    <div class="saved-later-card">
+      <img src="assets/tech/1.jpg" alt="GoPro HERO6 4K Action Camera - Black">
+      <div class="saved-later-price">$99.50</div>
+      <div class="saved-later-name">GoPro HERO6 4K Action<br>Camera - Black</div>
+      <button class="move-to-cart-btn"><i class="fas fa-cart-plus"></i> Move to cart</button>
+    </div>
+    <div class="saved-later-card">
+      <img src="assets/tech/10.jpg" alt="GoPro HERO6 4K Action Camera - Black">
+      <div class="saved-later-price">$99.50</div>
+      <div class="saved-later-name">GoPro HERO6 4K Action<br>Camera - Black</div>
+      <button class="move-to-cart-btn"><i class="fas fa-cart-plus"></i> Move to cart</button>
+    </div>
+    <div class="saved-later-card">
+      <img src="assets/tech/3.jpg" alt="GoPro HERO6 4K Action Camera - Black">
+      <div class="saved-later-price">$99.50</div>
+      <div class="saved-later-name">GoPro HERO6 4K Action<br>Camera - Black</div>
+      <button class="move-to-cart-btn"><i class="fas fa-cart-plus"></i> Move to cart</button>
+    </div>
+    <div class="saved-later-card">
+      <img src="assets/tech/2.jpg" alt="GoPro HERO6 4K Action Camera - Black">
+      <div class="saved-later-price">$99.50</div>
+      <div class="saved-later-name">GoPro HERO6 4K Action<br>Camera - Black</div>
+      <button class="move-to-cart-btn"><i class="fas fa-cart-plus"></i> Move to cart</button>
+    </div>
+  </div>
+</div>
+
+<div class="discount-banner">
+  <div class="discount-banner-content">
+    <div>
+      <div class="discount-banner-title">Super discount on more than 100 USD</div>
+      <div class="discount-banner-desc">Have you ever finally just write dummy info</div>
+    </div>
+    <button class="discount-banner-btn">Shop now</button>
+  </div>
+</div>
+
+<!-- ................Footer-Section.................. -->
+    <footer>
+        <div class="footer-section">
+            <div class="group">
+                <img src="image copy.png" alt="logo">
+            <p>Best information about the company <br> gies here but now lorem ipsum is</p>
+                <ul class="ul">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-linkedin"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                </ul>
+        </div>
+         <div class="group">
+            <h4>About Us</h4>
+            <ul>
+                <li class="i"><a href="#">About Us</a></li>
+                <li class="i"><a href="#">Find Stores</a></li>
+                <li class="i"><a href="#">Categories</a></li>
+                <li class="i"><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="group">
+            <h4>Partnerships</h4>
+            <ul>
+                <li class="i"><a href="#">Help Center</a></li>
+                <li class="i"><a href="#">Money Refund</a></li>
+                <li class="i"><a href="#">Shipping</a></li>
+                <li class="i"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+          <div class="group">
+            <h3>Informations</h4>
+            <ul>
+                <li class="i"><a href="#">About Us</a></li>
+                <li class="i"><a href="#">Find Stores</a></li>
+                <li class="i"><a href="#">Categories</a></li>
+                <li class="i"><a href="#">Blogs</a></li>
+            </ul>
+        </div> 
+         <div class="group">
+            <h3>For Users</h4>
+            <ul>
+                <li class="i"><a href="#">Login</a></li>
+                <li class="i"><a href="#">Register</a></li>
+                <li class="i"><a href="#">Settings</a></li>
+                <li class="i"><a href="#">My Orders</a></li>
+            </ul>
+        </div>
+        <div class="group">
+            <h4>Get app</h4>
+                <div class="buttons">
+                    <a href="#" class="button">
+    <span class="icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z" fill="white"></path>
+    </svg></span>
+    <div class="button-text google">
+    <span>Get it on</span>
+    <span>Google Play</span>
+</div>
+</a>
+</div>
+<div class="buttons"></div>
+<a href="#" class="button">
+    <span class="icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.5058 27.625C25.33 29.3817 24.0833 31.0958 22.185 31.1242C20.2866 31.1667 19.6775 30.005 17.5241 30.005C15.3566 30.005 14.6908 31.0958 12.8916 31.1667C11.0358 31.2375 9.6333 29.2967 8.4433 27.5825C6.0208 24.0833 4.16497 17.6375 6.6583 13.3025C7.8908 11.1492 10.1008 9.78916 12.495 9.74666C14.3083 9.71833 16.0366 10.9792 17.1558 10.9792C18.2608 10.9792 20.3575 9.46333 22.5533 9.68999C23.4741 9.73249 26.0525 10.0583 27.71 12.495C27.5825 12.58 24.6358 14.3083 24.6641 17.8925C24.7066 22.1708 28.4183 23.6017 28.4608 23.6158C28.4183 23.715 27.8658 25.6558 26.5058 27.625ZM18.4166 4.95833C19.4508 3.78249 21.165 2.88999 22.5816 2.83333C22.7658 4.49083 22.1 6.16249 21.1083 7.35249C20.1308 8.55666 18.5158 9.49166 16.9291 9.36416C16.7166 7.73499 17.51 6.03499 18.4166 4.95833Z" fill=""></path>
+    </svg></span>
+    <div class="button-text apple">
+        <span>Download from</span>
+        <span>App Store</span>
+    </div>
+</a>
+</div>
+</div>
+</div>
+</div>
+       <div class="lower-bar">
+            <div class="lower-bar-content">
+                <p>© Copyright 2023 Ecommerce.</p>
+            </div>
+            <div class="lower-bar-content">
+                <select>
+                    <option>
+                        English
+                    </option>
+                </select>
+            </div>
+       </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script>
+    // Cart Page Functionality
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Remove single item
+  document.querySelectorAll('.cart-remove-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const cartItem = btn.closest('.cart-item');
+      cartItem.remove();
+      updateCartSummary();
+      updateCartTitle();
+    });
+  });
+
+  // Remove all items
+  const removeAllBtn = document.querySelector('.cart-removeall-btn');
+  if (removeAllBtn) {
+    removeAllBtn.addEventListener('click', function () {
+      document.querySelectorAll('.cart-item').forEach(item => item.remove());
+      updateCartSummary();
+      updateCartTitle();
+    });
+  }
+
+  // Quantity change
+  document.querySelectorAll('.cart-qty').forEach(select => {
+    select.addEventListener('change', function () {
+      updateCartSummary();
+    });
+  });
+
+  // Apply coupon (dummy, just disables input)
+  const couponBtn = document.querySelector('.cart-coupon-row button');
+  if (couponBtn) {
+    couponBtn.addEventListener('click', function () {
+      const input = document.querySelector('.cart-coupon-row input[type="text"]');
+      if (input && input.value.trim() !== "") {
+        input.disabled = true;
+        couponBtn.disabled = true;
+        couponBtn.textContent = "Applied";
+        updateCartSummary(true);
+      }
+    });
+  }
+
+  // Update cart title
+  function updateCartTitle() {
+    const count = document.querySelectorAll('.cart-item').length;
+    const title = document.querySelector('.cart-title');
+    if (title) title.textContent = `My cart (${count})`;
+  }
+
+  // Update summary (subtotal, discount, tax, total)
+  function updateCartSummary(couponApplied) {
+    let subtotal = 0;
+    document.querySelectorAll('.cart-item').forEach(item => {
+      const price = parseFloat(item.querySelector('.cart-item-price').textContent.replace('$', '')) || 0;
+      const qtySelect = item.querySelector('.cart-qty');
+      let qty = 1;
+      if (qtySelect) {
+        const selected = qtySelect.options[qtySelect.selectedIndex].text.match(/\d+/);
+        qty = selected ? parseInt(selected[0]) : 1;
+      }
+      subtotal += price * qty;
+    });
+
+    // Example: discount and tax logic
+    let discount = subtotal > 1000 ? 60 : 0;
+    let tax = subtotal > 0 ? 14 : 0;
+    if (couponApplied) discount += 20; // extra discount for coupon
+
+    // Update DOM
+    document.querySelectorAll('.cart-summary-value')[0].textContent = `$${subtotal.toFixed(2)}`;
+    document.querySelectorAll('.cart-summary-value')[1].textContent = `- $${discount.toFixed(2)}`;
+    document.querySelectorAll('.cart-summary-value')[2].textContent = `+ $${tax.toFixed(2)}`;
+    document.querySelector('.cart-summary-total-value').textContent = `$${(subtotal - discount + tax).toFixed(2)}`;
+  }
+
+  // Initial update
+  updateCartSummary();
+  updateCartTitle();
+});
+</script>
+</html>
