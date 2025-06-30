@@ -1,1 +1,333 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.50">
+    <title>Modern Product Listing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+  <!-- Desktop & Tablet Header -->
+  <div class="main-header">
+    <div class="header-inner">
+      <button class="menu-btn" id="openSidebar"><i class="fas fa-bars"></i></button>
+      <a href="index.html">
+      <span class="brand-logo">
+        <span class="brand-icon"><i class="fas fa-shopping-bag"></i></span>
+        <span class="brand-name">Brand</span>
+      </span></a>
+      <form class="search-bar">
+        <input type="search" placeholder="Search">
+        <select>
+          <option>All category</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+      <div class="header-actions">
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#" class="user"><i class="fas fa-user"></i></a>
+      </div>
+      <div class="header-right">
+        <a href="#"><i class="fas fa-user"></i><span>Profile</span></a>
+        <a href="#"><i class="fas fa-envelope"></i><span>Message</span></a>
+        <a href="my-cart.html
+        "><i class="fas fa-heart"></i><span>Orders</span></a>
+        <a href="product-listing.html"><i class="fas fa-shopping-cart"></i><span>My cart</span></a>
+      </div>
+    </div>
+
+    <div class="header-nav">
+      <ul>
+        <li><a href="#"><i class="fas fa-bars"></i> All category</a></li>
+        <li><a href="#">Hot offers</a></li>
+        <li><a href="#">Gift boxes</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Menu item</a></li>
+        <li><a href="#">Help <i class="fas fa-chevron-down"></i></a></li>
+      </ul>
+      <div class="selectors">
+        <div class="selector">
+          English, USD <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="selector">
+          Ship to <img src="https://flagcdn.com/16x12/de.png" alt="DE" class="flag-icon">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-user">
+        <div class="user-avatar"><i class="fas fa-user-circle"></i></div>
+        <div class="user-auth"><a href="#">Sign in</a> | <a href="#">Register</a></div>
+      </div>
+      <button class="close-sidebar" id="closeSidebar"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-list"></i> Categories</a></li>
+      <li><a href="#"><i class="fas fa-heart"></i> Favorites</a></li>
+      <li><a href="#"><i class="fas fa-box"></i> My orders</a></li>
+      <hr>
+      <li><a href="#"><i class="fas fa-globe"></i> English | USD</a></li>
+      <li><a href="#"><i class="fas fa-headphones"></i> Contact us</a></li>
+      <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+      <hr>
+      <li><a href="#">User agreement</a></li>
+      <li><a href="#">Partnership</a></li>
+      <li><a href="#">Privacy policy</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+</header>
+
+    <div class="breadcrumb">
+        Home &gt; Clothing &gt; Men's wear &gt; Summer clothing
+    </div>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="filter-section">
+                <div class="filter-header" id="category-header">
+                    <h2 class="filter-title">Category</h2>
+                    <span class="toggle-icon">&#9660;</span>
+                </div>
+                <div class="filter-content" id="category-content">
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="category" value="Mobile Accessory"> Mobile Accessory</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="category" value="Electronics"> Electronics</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="category" value="Smartphones"> Smartphones</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="category" value="Modern Tech"> Modern Tech</div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-header" id="brand-header">
+                    <h2 class="filter-title">Brands</h2>
+                    <span class="toggle-icon">&#9660;</span>
+                </div>
+                <div class="filter-content" id="brand-content">
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="brand" value="Samsung"> Samsung</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="brand" value="Apple"> Apple</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="brand" value="Huawei"> Huawei</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="brand" value="Poco"> Poco</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="brand" value="Lenovo"> Lenovo</div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-header" id="feature-header">
+                    <h2 class="filter-title">Features</h2>
+                    <span class="toggle-icon">&#9660;</span>
+                </div>
+                <div class="filter-content" id="feature-content">
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="feature" value="Metallic"> Metallic</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="feature" value="Plastic cover"> Plastic cover</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="feature" value="8GB Ram"> 8GB Ram</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="feature" value="Super power"> Super power</div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="feature" value="Large Memory"> Large Memory</div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-header" id="price-header">
+                    <h2 class="filter-title">Price Range</h2>
+                    <span class="toggle-icon">&#9660;</span>
+                </div>
+                <input type="range" id="price-range" min="0" max="10000" step="100" value="10000">
+                <div class="filter-content" id="price-content">
+                    <div class="price-range">
+                        <input type="number" id="min-price" placeholder="Min" min="0" max="10000" value="0">
+                        <input type="number" id="max-price" placeholder="Max" min="0" max="10000" value="10000">
+                    </div>
+                    <button id="apply-btn" class="apply-btn">Apply</button>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-header" id="condition-header">
+                    <h2 class="filter-title">Condition</h2>
+                    <span class="toggle-icon">&#9660;</span>
+                </div>
+                <div class="filter-content" id="condition-content">
+                    <div class="filter-item"><input type="radio" name="condition" class="filter-radio" data-filter="condition" value="Any" checked> Any</div>
+                    <div class="filter-item"><input type="radio" name="condition" class="filter-radio" data-filter="condition" value="Refurbished"> Refurbished</div>
+                    <div class="filter-item"><input type="radio" name="condition" class="filter-radio" data-filter="condition" value="Brand new"> Brand new</div>
+                    <div class="filter-item"><input type="radio" name="condition" class="filter-radio" data-filter="condition" value="Old items"> Old items</div>
+                </div>
+            </div>
+            <div class="filter-section">
+                <div class="filter-header" id="rating-header">
+                    <h2 class="filter-title">Ratings</h2>
+                    <span class="toggle-icon">&#9660;</span>
+                </div>
+                <div class="filter-content" id="rating-content">
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="rating" value="5"><span style="color:#ffd700;">★★★★★</span></div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="rating" value="4"><span style="color:#ffd700;">★★★★☆</span></div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="rating" value="3"><span style="color:#ffd700;">★★★☆☆</span></div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="rating" value="2"><span style="color:#ffd700;">★★☆☆☆</span></div>
+                    <div class="filter-item"><input type="checkbox" class="filter-checkbox" data-filter="rating" value="1"><span style="color:#ffd700;">★☆☆☆☆</span></div>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Category Header and Filter Tags Bar -->
+            <div class="category-header">
+                <span id="item-count">12,911 items in <b>Mobile accessory</b></span>
+                <div class="category-actions">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="verified-only">
+                        Verified only
+                    </label>
+                    <select class="featured-select">
+                        <option>Featured</option>
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                    <button class="view-btn active" id="grid-view"><i class="fas fa-th-large"></i></button>
+                    <button class="view-btn" id="list-view"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+            <div class="filter-tags-bar" id="filter-tags-bar">
+                <span class="filter-tag">Samsung <i class="fas fa-times"></i></span>
+                <span class="filter-tag">Apple <i class="fas fa-times"></i></span>
+                <span class="filter-tag">Poco <i class="fas fa-times"></i></span>
+                <span class="filter-tag">Metallic <i class="fas fa-times"></i></span>
+                <span class="filter-tag">4 star <i class="fas fa-times"></i></span>
+                <span class="filter-tag">3 star <i class="fas fa-times"></i></span>
+                <a href="#" class="clear-filters" id="clear-filters">Clear all filter</a>
+            </div>
+            <div id="product-list" class="product-list">
+                <!-- Product cards will be rendered here -->
+            </div>
+            <div id="product-list" class="product-list grid-view">
+                
+            </div>
+        </main>
+    </div>
+    <!-- Pagination and Newsletter -->
+    <div class="newsletter-controls">
+        <div class="controls-inner">
+            <div class="show-dropdown">
+                <label for="show-count" style="font-size: 15px; color: #444; margin-right: 6px;">Show</label>
+                <select id="show-count">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                </select>
+            </div>
+            <div class="pagination" id="pagination">
+                <button class="page-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+   <section class="newsletter">
+    <div class="newsletter-text">
+    <h1>Subscribe to our newsletter</h1>
+    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+    </div>
+    <form class="newsletter-form">
+        <input type="email"placeholder="Email">
+        <input type="submit" value="Subscribe">
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <div class="group">
+                <img src="image copy.png" alt="logo">
+            <p>Best information about the company <br> gies here but now lorem ipsum is</p>
+                <ul class="ul">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-twitter"></i></a>
+                   <a href="#"><i class="fab fa-linkedin"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-youtube"></i></a>
+                </ul>
+        </div>
+         <div class="group">
+            <h4>About Us</h4>
+            <ul>
+                <li class="i"><a href="#">About Us</a></li>
+                <li class="i"><a href="#">Find Stores</a></li>
+                <li class="i"><a href="#">Categories</a></li>
+                <li class="i"><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+        <div class="group">
+            <h4>Partnerships</h4>
+            <ul>
+                <li class="i"><a href="#">Help Center</a></li>
+                <li class="i"><a href="#">Money Refund</a></li>
+                <li class="i"><a href="#">Shipping</a></li>
+                <li class="i"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+          <div class="group">
+            <h3>Informations</h4>
+            <ul>
+                <li class="i"><a href="#">About Us</a></li>
+                <li class="i"><a href="#">Find Stores</a></li>
+                <li class="i"><a href="#">Categories</a></li>
+                <li class="i"><a href="#">Blogs</a></li>
+            </ul>
+        </div> 
+         <div class="group">
+            <h3>For Users</h4>
+            <ul>
+                <li class="i"><a href="#">Login</a></li>
+                <li class="i"><a href="#">Register</a></li>
+                <li class="i"><a href="#">Settings</a></li>
+                <li class="i"><a href="#">My Orders</a></li>
+            </ul>
+        </div>
+        <div class="group">
+            <h4>Get app</h4>
+                <div class="buttons">
+                    <a href="#" class="button">
+    <span class="icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z" fill="white"></path>
+    </svg></span>
+    <div class="button-text google">
+    <span>Get it on</span>
+    <span>Google Play</span>
+</div>
+</a>
+</div>
+<div class="buttons"></div>
+<a href="#" class="button">
+    <span class="icon"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26.5058 27.625C25.33 29.3817 24.0833 31.0958 22.185 31.1242C20.2866 31.1667 19.6775 30.005 17.5241 30.005C15.3566 30.005 14.6908 31.0958 12.8916 31.1667C11.0358 31.2375 9.6333 29.2967 8.4433 27.5825C6.0208 24.0833 4.16497 17.6375 6.6583 13.3025C7.8908 11.1492 10.1008 9.78916 12.495 9.74666C14.3083 9.71833 16.0366 10.9792 17.1558 10.9792C18.2608 10.9792 20.3575 9.46333 22.5533 9.68999C23.4741 9.73249 26.0525 10.0583 27.71 12.495C27.5825 12.58 24.6358 14.3083 24.6641 17.8925C24.7066 22.1708 28.4183 23.6017 28.4608 23.6158C28.4183 23.715 27.8658 25.6558 26.5058 27.625ZM18.4166 4.95833C19.4508 3.78249 21.165 2.88999 22.5816 2.83333C22.7658 4.49083 22.1 6.16249 21.1083 7.35249C20.1308 8.55666 18.5158 9.49166 16.9291 9.36416C16.7166 7.73499 17.51 6.03499 18.4166 4.95833Z" fill=""></path>
+    </svg></span>
+    <div class="button-text apple">
+        <span>Download from</span>
+        <span>App Store</span>
+    </div>
+</a>
+</div>
+</div>
+</div>
+</div>
+       <div class="lower-bar">
+            <div class="lower-bar-content">
+                <p>© Copyright 2023 Ecommerce.</p>
+            </div>
+            <div class="lower-bar-content">
+                <select>
+                    <option>
+                        English
+                    </option>
+                </select>
+            </div>
+       </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
